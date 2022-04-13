@@ -1,0 +1,30 @@
+.pic {
+  display: none;
+  background-color: blue;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+body {
+  background-image: url("https://art.pixilart.com/a13179859ba5416.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.card {
+  background-color: rgba(127, 255, 212, 0.619);
+}
+
+h2 {
+  color: red;
+  text-shadow: blue 2px 2px 2px;
+}
+
+#battle-screen {
+  display: none;
+}
+
+#game-over {
+  display: none;
+}

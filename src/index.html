@@ -2,9 +2,82 @@
 <html lang="en-US">
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <title>Memory Game</title>
+  <title>80's RPG</title>
 </head>
 <body>
-  
+  <div class="container">
+    <div class="jumbotron p-5 m-a text-center">
+      <h2>Dance Dance RPG</h2>
+    </div>
+    <div class="row">
+      <button class="btn-success" id="new-state">Add new player</button>
+    </div>
+    <div id="stat-page">
+      <div class="row m-3" id="players-row">
+        <!-- <div class="col-md-6">
+          <h3 class="text-center text-danger m-3">Player 1</h3>
+          <button class="btn-success" id="add-dance-1">Dance!</button>
+          <button class="btn-success" id="add-drip-1">Drip!</button>
+          <button class="btn-success" id="add-surge-1">Drink a surge!</button>
+          <button class="btn-success" id="add-coke-1">Drink a Coke!</button>
+          <button class="btn-success" id="add-fuel-1">Eat some pizza!</button>
+          <button class="btn-success" id="add-prince-1">Go backstage with Prince!</button>
+          <button class="btn-success" id="show-state-1">Show State</button>
+          <button class="btn-success" id="next-pg">BATTLE!</button>
+          <div class="row m-3">
+            <div class="col-md-12">
+              <div class="card m-a p-3">
+                <h4>Player 1 Stats:</h4>
+                <h5><div id="dance-stats-1">Dance Lvl: 0</div></h5>
+                <h5><div id="drip-stats-1">Drip Lvl: 0</div></h5>
+                <h5><div id="pop-stats-1">Pop Lvl: 0</div></h5>
+                <h5><div id="fuel-stats-1">Fuel Lvl: 0</div></h5>
+                <h5><div id="prince-stats-1">Tubular Lvl: 0</div></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-center text-danger m-3">Player 2</h3>
+          <button class="btn-success" id="add-dance-2">Dance!</button>
+          <button class="btn-success" id="add-drip-2">Drip!</button>
+          <button class="btn-success" id="add-surge-2">Drink a surge!</button>
+          <button class="btn-success" id="add-coke-2">Drink a Coke!</button>
+          <button class="btn-success" id="add-fuel-2">Eat some pizza!</button>
+          <button class="btn-success" id="add-prince-2">Go backstage with Prince!</button>
+          <button class="btn-success" id="show-state-2">Show State</button>
+          <button class="btn-success" id="next-pg">BATTLE!</button>
+          <div class="row m-3">
+            <div class="col-md-12">
+              <div class="card m-a p-3">
+                <h4>Player 2 Stats:</h4>
+                <h5><div id="dance-stats-2">Dance Lvl: 0</div></h5>
+                <h5><div id="drip-stats-2">Drip Lvl: 0</div></h5>
+                <h5><div id="pop-stats-2">Pop Lvl: 0</div></h5>
+                <h5><div id="fuel-stats-2">Fuel Lvl: 0</div></h5>
+                <h5><div id="prince-stats-2">Tubular Lvl: 0</div></h5>
+              </div>
+            </div>
+          </div> 
+        </div> -->
+      </div>
+    </div>
+    <div class="pic">
+      <h3>You passed TF out! Stellar party brah!</h3>
+    <img src="https://qph.cf2.quoracdn.net/main-qimg-dbeb1fc726f1a0b91eab6d32cc9929d7-lq">
+    </div>
+    <div id="battle-screen">
+      <button class="btn-warning" id="back-btn">Back to Stats</button>
+      <div class="row">
+        <h5><div id="drip-stats-1">Drip Lvl: 0</div></h5>
+        <h5><div id="drip-stats">Drip Lvl: 0</div></h5>
+      </div>
+    </div>
+    <div id="game-over">
+      <h1>Game Over!</h1>
+      <h3>Wicked try! You had some mega skills!</h3>
+      <button class="btn-success" onclick="window.location.reload()">New Game.</button>
+    </div>
+  </div>  
 </body>
 </html>
