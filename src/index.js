@@ -15,9 +15,9 @@ $(document).ready(function() {
     //   "fuel": 1,
     //   "tubular": 0
     // });
-    const addState = mod.changeListState(stateControl);
+    const addState = mod.changeListState(stateControl());
     const newList = mod.listControl(addState);
-    console.log(mod.listControl());
+    console.log(addState);
     $("#players-row").append(`
       <div class="col">
       <h3 class="text-center text-danger m-3">Player ${newList.length}</h3>
@@ -50,7 +50,7 @@ $(document).ready(function() {
         const id = parseInt(this.id.slice(10));
         const stateControl = mod.listControl()[id];
         console.log(stateControl);
-        const newState = mod.stateControl(mod.dance);
+        const newState = stateControl(mod.dance);
         console.log(stateControl.dance);
         $(`#dance-stats-${i}`).text(`Dance Lvl: ${newState.dance}`);
         // $(".pic").hide();
